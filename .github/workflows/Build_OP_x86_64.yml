@@ -77,6 +77,21 @@ jobs:
         echo "luci-app-openclash" >> .git/info/sparse-checkout
         git pull --depth 1 origin master
         git branch --set-upstream-to=origin/master 
+        
+    - name: luci-theme-design
+      run: |
+        cd openwrt/package 		
+        git clone https://github.com/gngpp/luci-theme-design.git luci-theme-design
+        
+    - name: luci-theme-infinityfreedom
+      run: |
+        cd openwrt/package 		
+        git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git luci-theme-infinityfreedom
+        
+    - name: OpenAppFilter
+      run: |
+        cd openwrt/package 		
+        git clone https://github.com/destan19/OpenAppFilter.git OpenAppFilter        
    
     - name: Update & Install feeds
       working-directory: ./openwrt
