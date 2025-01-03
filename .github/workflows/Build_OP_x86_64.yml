@@ -70,7 +70,7 @@ jobs:
         
     #- name: luci-theme-design
       #run: |
-        cd openwrt/package 		
+        #cd openwrt/package 		
         git clone https://github.com/gngpp/luci-theme-design.git luci-theme-design
         
     - name: luci-theme-infinityfreedom
