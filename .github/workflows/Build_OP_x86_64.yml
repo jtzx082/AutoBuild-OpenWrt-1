@@ -68,8 +68,8 @@ jobs:
         git pull --depth 1 origin master
         git branch --set-upstream-to=origin/master 
         
-    # - name: luci-theme-design
-     # run: |
+    - name: luci-theme-design
+      run: |
         cd openwrt/package 		
         git clone https://github.com/gngpp/luci-theme-design.git luci-theme-design
         
